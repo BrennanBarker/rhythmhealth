@@ -1,11 +1,14 @@
 title: Rhythm Health LLC
 
 nav:
-  - link: Home
-  - link: Physical Therapy
-  - link: Health Coaching
-  - link: About
-  - link: Contact
+  - name: Physical Therapy
+    link: '#physical-therapy'
+  - name: Health Coaching
+    link: '#health-coaching'
+  - name: About
+    link: '#about'
+  - name: Contact
+    link: '#contact'
 
 masthead:
   - subheading: Are you struggling on your path to your best health?
@@ -16,3 +19,20 @@ call_to_action_link: https://calendly.com/megan-rhythm-health/discovery-call
 call_to_action_subhead: Schedule a free Discovery Call to get started.
 
 portfolio_header: 'Two ways to reach your health goals:'
+
+modals:
+  - id: portfolioModal0
+    img_src: assets/img/portfolio/cabin.png 
+    alt_text: Log Cabin
+    title: Log Cabin
+    text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+  - id: portfolioModal1
+    img_src: assets/img/portfolio/safe.png
+    alt_text: Locked Safe
+    title: Locked Safe
+    text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+
+about_content:
+  - column: Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+  - column: You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
+
