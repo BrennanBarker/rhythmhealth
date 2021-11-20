@@ -1,10 +1,18 @@
 title: Rhythm Health LLC
 
-subheading1: Are you struggling on your path to your best health?
-subheading2: Do you feel unheard and frustrated with where to turn?
-subheading3: >
-  Rhythm Health is here to give you the support, accountability, and resources 
-  to take the next steps towards where you want to be.
+nav:
+  - link: Home
+  - link: Physical Therapy
+  - link: Health Coaching
+  - link: About
+  - link: Contact
 
-discovery_call_link: https://calendly.com/megan-rhythm-health/discovery-call
-discovery_call_call_to_action1: Schedule a free Discovery Call to get started.
+masthead:
+  - subheading: Are you struggling on your path to your best health?
+  - subheading: Do you feel unheard and frustrated with where to turn?
+  - subheading: Rhythm Health is here to give you the support, accountability, and resources to take the next steps towards where you want to be.
+
+call_to_action_link: https://calendly.com/megan-rhythm-health/discovery-call
+call_to_action_subhead: Schedule a free Discovery Call to get started.
+
+portfolio_header: 'Two ways to reach your health goals:'
