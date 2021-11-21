@@ -10,10 +10,11 @@ nav:
   - name: Contact
     link: '#contact'
 
-masthead:
-  - subheading: Are you struggling on your path to your best health?
-  - subheading: Do you feel unheard and frustrated with where to turn?
-  - subheading: Rhythm Health is here to give you the support, accountability, and resources to take the next steps towards where you want to be.
+masthead_image: assets/img/reaching_ballet_dancer.svg
+masthead_subheadings:
+  - Are you struggling on your path to your best health?
+  - Do you feel unheard and frustrated with where to turn?
+  - Rhythm Health is here to give you the support, accountability, and resources to take the next steps towards where you want to be.
 
 call_to_action_link: https://calendly.com/megan-rhythm-health/discovery-call
 call_to_action_subhead: Schedule a free Discovery Call to get started.
@@ -39,3 +40,9 @@ about_content:
   - column: Dr. Megan Barker is excited to help women and girls reach their goals in a caring and holistic way. 
     l_r: r
 
+divider: |
+  <div class="divider-custom">
+    <div class="divider-custom-line"></div>
+    <div class="divider-custom-icon"><i class="far fa-circle"></i></div>
+    <div class="divider-custom-line"></div>
+  </div>
