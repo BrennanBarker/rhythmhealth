@@ -100,7 +100,9 @@
                 <!-- About Section Content-->
                 <div class="row">
                     <div class="col-lg-4 ml-auto">
-                        <p class="pre-wrap lead">{{about_text}}</p>
+                        {{#about_text}}
+                        <p class="pre-wrap lead">{{.}}</p>
+                        {{/about_text}}
                     </div>
                     <div class="col-lg-4 mr-auto">
                         <img class="img-fluid" src="{{about_image}}" alt_text="{{about_image_alt_text}}">
