@@ -20,7 +20,6 @@ call_to_action_link: https://calendly.com/megan-rhythm-health/discovery-call
 call_to_action_subhead: Schedule a free Discovery Call to get started.
 
 portfolio_header: 'Two ways to reach your health goals:'
-portfolio_text_color: primary
 
 modals:
   - id: portfolioModal0
