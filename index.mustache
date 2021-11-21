@@ -32,25 +32,25 @@
                 <h1 class="masthead-heading mb-0">{{title}}</h1>
                 <!-- icon divider-->
                 {{{divider}}}
-                <!-- Masthead Subheading-->
+                <!-- masthead subheading-->
                 {{#masthead_subheadings}}
                 <p class="pre-wrap masthead-subheading font-weight-light mb-0">{{.}}</p><p>
                 {{/masthead_subheadings}}
-                <!-- Call to action -->
+                <!-- call to action -->
                 <p><p><a class="btn btn-xl btn-outline-light" href="{{call_to_action_link}}">{{call_to_action_subhead}}</a></p>
             </div>
         </header>
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
-                <!-- Portfolio Section Heading-->
+                <!-- portfolio section heading-->
                 <div class="text-center">
                     <h2 class="page-section-heading text-{{portfolio_text_color}} mb-0 d-inline-block">{{portfolio_header}}</h2>
                 </div>
-                <!-- Icon Divider-->
+                <!-- icon divider-->
                 {{{divider}}}
-                <!-- Portfolio Grid Items-->
+                <!-- portfolio grid items-->
                 <div class="row justify-content-center">
-                    <!-- Portfolio Items-->
+                    <!-- portfolio items-->
                     {{#modals}}
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#{{id}}">
@@ -63,28 +63,24 @@
                 </div>
             </div>
         </section>
-        <!-- Portfolio Modal-->
+        <!-- portfolio modal-->
         {{#modals}}
-        <div class="portfolio-modal modal fade" id="{{id}}" tabindex="-1" role="dialog" aria-labelledby="#{{id}}Label" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="{{id}}" tabindex="-1" role="dialog" aria-labelledby="#{{id}}label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
                     <div class="modal-body text-center">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
+                                    <!-- portfolio modal - title-->
                                     <h2 class="portfolio-modal-title text-secondary mb-0">{{title}}</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="{{img_src}}" alt="{{alt_text}}"/>
-                                    <!-- Portfolio Modal - Text-->
+                                    <!-- icon divider-->
+                                    {{{divider}}}
+                                    <!-- portfolio modal - image--><img class="img-fluid rounded mb-5" src="{{img_src}}" alt="{{alt_text}}"/>
+                                    <!-- portfolio modal - text-->
                                     <p class="mb-5">{{text}}</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close</button>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>close</button>
                                 </div>
                             </div>
                         </div>
@@ -95,23 +91,20 @@
         {{/modals}}
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
-                <!-- About Section Heading-->
+                <!-- about section heading-->
                 <div class="text-center">
-                    <h2 class="page-section-heading d-inline-block text-white">ABOUT</h2>
+                    <h2 class="page-section-heading d-inline-block text-white">{{about_title}}</h2>
                 </div>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
+                <!-- icon divider-->
+                {{{divider}}}
                 <!-- About Section Content-->
                 <div class="row">
-                    {{#about_content}}
-                    <div class="col-lg-4 m{{l_r}}-auto">
-                        <p class="pre-wrap lead">{{column}}</p>
+                    <div class="col-lg-4 ml-auto">
+                        <p class="pre-wrap lead">{{about_text}}</p>
                     </div>
-                    {{/about_content}}
+                    <div class="col-lg-4 mr-auto">
+                        <img src="{{about_image}}" alt_text="{{about_image_alt_text}}">
+                    </div>
                 </div>
             </div>
         </section>
@@ -122,11 +115,7 @@
                     <h2 class="page-section-heading text-secondary d-inline-block mb-0">CONTACT</h2>
                 </div>
                 <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
+                {{{divider}}}
                 <!-- Contact Section Content-->
                 <div class="row justify-content-center">
                     <div class="col-lg-4">

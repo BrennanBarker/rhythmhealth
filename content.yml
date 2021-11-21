@@ -34,11 +34,14 @@ modals:
     title: Locked Safe
     text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
 
-about_content:
-  - column: A love of movement and science brought her to healthcare, but her experiences as a patient and a provider make her passionate about providing compassionate and supportive care to her clients. 
-    l_r: l
-  - column: Dr. Megan Barker is excited to help women and girls reach their goals in a caring and holistic way. 
-    l_r: r
+about_title: About Dr. Barker
+about_text: >
+  A love of movement and science brought her to healthcare, but her experiences 
+  as a patient and a provider make her passionate about providing compassionate 
+  and supportive care to her clients. Dr. Megan Barker is excited to help women 
+  and girls reach their goals in a caring and holistic way. 
+about_image: assets/img/DrBarker.jpg
+about_image_alt_text: Dr. Barker
 
 divider: |
   <div class="divider-custom">
