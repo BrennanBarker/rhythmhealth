@@ -41,6 +41,13 @@ about_text: >
 about_image: assets/img/DrBarker.jpg
 about_image_alt_text: Dr. Barker
 
+instagram:
+  - handle: '@rhythmhealthdpt'
+    link: https://www.instagram.com/rhythmhealthdpt/
+  - handle: '@hypermobilityhealthcoach'
+    link: https://www.instagram.com/hypermobilityhealthcoach/
+
+
 email: megan@rhythmhealthllc.com
 
 contact_subheading: Let's talk about how Rhythm Health can work with you.
