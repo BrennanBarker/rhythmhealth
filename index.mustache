@@ -75,13 +75,15 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- portfolio modal - title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">{{title}}</h2>
+                                    <h2 class="portfolio-modal-title text-primary mb-0">{{title}}</h2>
                                     <!-- icon divider-->
                                     {{{divider}}}
-                                    <!-- portfolio modal - image--><img class="img-fluid rounded mb-5" src="{{img_src}}" alt="{{alt_text}}"/>
                                     <!-- portfolio modal - text-->
-                                    <p class="mb-5">{{text}}</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>close</button>
+                                    {{#text}}
+                                    <h6>{{header}}</h6>
+                                    <p class="mb-3">{{text}}</p>
+                                    {{/text}}
+                                    <a class="btn btn-xl btn-primary" href="{{call_to_action_link}}">{{call_to_action_text}}</a>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +106,9 @@
                         {{#about_text}}
                         <p class="pre-wrap lead">{{.}}</p>
                         {{/about_text}}
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutModal">{{about_modal_button_text}}</button>
+                        <p>
+                        <button type="button" class="btn btn-primary btn-outline-light" data-toggle="modal" data-target="#aboutModal">{{about_modal_button_text}}</button>
+                        </p>
                     </div>
                     <div class="col-lg-4 mr-auto">
                         <img class="img-fluid rounded" src="{{about_image}}" alt_text="{{about_image_alt_text}}">
@@ -122,14 +126,28 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- portfolio modal - title-->
-                                    <h2 class="portfolio-modal-title
-                                        text-secondary mb-0">{{about_title}}</h2>
+                                    <h2 class="portfolio-modal-title text-primary mb-0">{{about_title}}</h2>
                                     <!-- icon divider-->
                                     {{{divider}}}
-                                    <!-- portfolio modal - image-->
-                                    <img class="img-fluid rounded mb-5" src="{{about_image}}" alt="{{about_image_alt_text}}"/>
                                     <!-- portfolio modal - text-->
-                                    <p class="mb-5">{{about_modal_text}}</p>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                {{#about_modal_left_column}}
+                                                <p class="mb-6">{{.}}</p>
+                                                {{/about_modal_left_column}}
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="list-group">
+                                                {{#about_modal_right_column}}
+                                                <li class="list-group-item">{{.}}</li>
+                                                {{/about_modal_right_column}}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mr-auto">
+                                    </div>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>close</button>
                                 </div>
                             </div>
