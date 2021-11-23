@@ -52,7 +52,8 @@
                 <div class="row justify-content-center">
                     <!-- portfolio items-->
                     {{#modals}}
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5" id="{{anchor}}">
+                        <h3 class="text-center text-primary">{{title}}</h3>
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#{{id}}">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -103,6 +104,7 @@
                         {{#about_text}}
                         <p class="pre-wrap lead">{{.}}</p>
                         {{/about_text}}
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutModal">{{about_modal_button_text}}</button>
                     </div>
                     <div class="col-lg-4 mr-auto">
                         <img class="img-fluid rounded" src="{{about_image}}" alt_text="{{about_image_alt_text}}">
@@ -110,18 +112,45 @@
                 </div>
             </div>
         </section>
+        <!-- About Modal -->
+        <div class="portfolio-modal modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="#aboutModallabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- portfolio modal - title-->
+                                    <h2 class="portfolio-modal-title
+                                        text-secondary mb-0">{{about_title}}</h2>
+                                    <!-- icon divider-->
+                                    {{{divider}}}
+                                    <!-- portfolio modal - image-->
+                                    <img class="img-fluid rounded mb-5" src="{{about_image}}" alt="{{about_image_alt_text}}"/>
+                                    <!-- portfolio modal - text-->
+                                    <p class="mb-5">{{about_modal_text}}</p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
                 <div class="text-center">
-                    <h2 class="page-section-heading text-primary d-inline-block mb-0">CONTACT</h2>
+                    <h2 class="page-section-heading text-primary d-inline-block mb-0">Contact Us</h2>
                 </div>
                 <!-- Icon Divider-->
                 {{{divider}}}
                 <div class="text-center">
-                    <p class="pre-wrap masthead-subheading font-weight-light mb-0">{{contact_subheading}}</p>
-                    <p><p>
-                    <p><a class="btn btn-xl btn-outline-dark" href="{{call_to_action_link}}">{{contact_call_to_action}}</a></p>
+                    <h3 class="text-primary mb-0">{{contact_subheading}}</h3>
+                    <div class="divider-custom">
+                        <p><a class="btn btn-xl btn-outline-primary text-primary" href="{{call_to_action_link}}">{{contact_call_to_action}}</a></p>
+                    </div>
                 </div>
                 <!-- call to action -->
                
