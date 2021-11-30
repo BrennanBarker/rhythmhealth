@@ -7004,6 +7004,9 @@ button.bg-dark:focus {
 .text-uppercase {
   text-transform: uppercase !important; }
 
+.text-underline {
+  text-decoration: underline !important; }
+
 .text-capitalize {
   text-transform: capitalize !important; }
 

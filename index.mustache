@@ -195,7 +195,51 @@
             </div>
         </section>
         <footer class="footer text-center">
-            <div class="container"><small class="pre-wrap">{{copyright}}</small></div>
+            <div class="container">
+                <small class="text-primary">
+                    <a data-toggle="modal" data-target="#disclaimerModal" class="text-underline">Legal Disclaimer</a>
+                    <p>
+                    {{copyright}}
+                </small>
+            </div>
+
+            
+            <!-- Disclaimer Modal -->
+            <div class="portfolio-modal modal fade" id="disclaimerModal" tabindex="-1" role="dialog" aria-labelledby="#discalimerModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- portfolio modal - title-->
+                                        <h2 class="portfolio-modal-title text-primary mb-0">{{disclaimer_title}}</h2>
+                                        <!-- icon divider-->
+                                        {{{divider}}}
+                                        <!-- portfolio modal - text-->
+                                        <div class="text-dark text-left">
+                                            {{disclaimer_header}}
+                                            <p>
+                                            <ul>
+                                                {{#disclaimer_sections}}
+                                                <li class="font-weight-bold">{{header}}</li>
+                                                {{body}}
+                                                <p>
+                                                {{/disclaimer_sections}}
+                                            </ul>
+                                            Last Updated: {{last_updated}}
+                                        </div>
+                                        <div class="col-lg-4 mr-auto">
+                                        </div>
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
         <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
